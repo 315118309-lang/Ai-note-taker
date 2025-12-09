@@ -29,6 +29,10 @@ export default defineConfig(({ mode }) => {
         // 确保所有资源都被正确打包
         assetsDir: 'assets',
         assetsInlineLimit: 0,
+        // 将所有依赖打包到 bundle 中
+        commonjsOptions: {
+          include: [/node_modules/],
+        },
       },
     };
 });
