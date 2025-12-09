@@ -1,20 +1,52 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# MemoVoice - AI 语音笔记应用
 
-# Run and deploy your AI Studio app
+MemoVoice 是一个结合了待办事项和随手记功能的语音交互应用，具有现代化的界面设计。
 
-This contains everything you need to run your app locally.
+## 功能特性
 
-View your app in AI Studio: https://ai.studio/apps/drive/1nnAMHxvAZqoYN0xjIztLKKK9KQuWx_40
+- 🎤 语音输入支持
+- ✅ 待办事项管理
+- 📝 随手记功能
+- 📱 响应式设计，适配移动设备
+- 🌙 深色主题界面
 
-## Run Locally
+## 本地开发
 
-**Prerequisites:**  Node.js
+1. 安装依赖：
+   ```bash
+   npm install
+   ```
 
+2. 启动开发服务器：
+   ```bash
+   npm run dev
+   ```
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+3. 在浏览器中访问 http://localhost:3000
+
+## 构建生产版本
+
+```bash
+npm run build
+```
+
+## 部署到 GitHub Pages
+
+1. 确保在 `vite.config.ts` 中正确设置了 base 路径
+2. 构建项目：`npm run build`
+3. 将 `dist` 目录的内容部署到 GitHub Pages
+
+## 使用说明
+
+- 在"待办"标签页中，可以添加和管理今日任务
+- 在"随手记"标签页中，可以记录日常想法和笔记
+- 使用麦克风图标进行语音输入
+- 支持中英文输入
+
+## 技术栈
+
+- React 19
+- TypeScript
+- Vite
+- Tailwind CSS
+- Lucide React 图标库
