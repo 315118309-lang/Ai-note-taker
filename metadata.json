@@ -1,0 +1,7 @@
+{
+  "name": "MemoVoice",
+  "description": "一款专为高认知负荷创造者设计的语音优先任务管理与日记应用。",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
