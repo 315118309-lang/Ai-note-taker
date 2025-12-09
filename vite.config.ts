@@ -26,6 +26,9 @@ export default defineConfig(({ mode }) => {
             manualChunks: undefined,
           },
         },
+        // 确保所有资源都被正确打包
+        assetsDir: 'assets',
+        assetsInlineLimit: 0,
       },
     };
 });
